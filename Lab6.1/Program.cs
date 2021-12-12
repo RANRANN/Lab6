@@ -13,37 +13,19 @@ namespace Lab6._1
             string startstring = Console.ReadLine();
             string[] stringarray = startstring.Split();
             int max = stringarray[0].Length;
-            int resultstring ;
-            foreach (string s in stringarray);
+            foreach (string s in stringarray)
             {
-                resultstring = stringarray[1].Length;
-                _ = (max > resultstring) ? max = max : max = resultstring;
-            }
-            /*for (int i=0,stringarray[].Length)
-            {
-                if (a>max)
+                Console.Write("{0} ", s.Length);
+                if (max >= s.Length)
                 {
-                    max = a;
+                    max = max;
+                }
+                else 
+                {
+                    max = s.Length;
                 }
             }
-            Console.WriteLine(max);
-            /*n = stringarray[s.length];
-            for (int i = 0; i < length; i++)
-            {
-                n = (n > s.length) ? n = n : n = s.length;
-            } 
-            n=Math.Max(array[i])
-            Console.WriteLine(n);
-
-            int max = array[0];
-            foreach (int a in array);
-            {
-                if (a>max)
-                max=a;
-            }
-            Console.WriteLine(max);
-            Console.ReadKey();
-             */
+            Console.WriteLine();
             Console.WriteLine(max);
             Console.ReadKey();
         }
