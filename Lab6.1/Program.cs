@@ -13,14 +13,11 @@ namespace Lab6._1
             string startstring = Console.ReadLine();
             string[] stringarray = startstring.Split();
             int max = stringarray[0].Length;
-            int resultstring = 0;
+            int resultstring ;
             foreach (string s in stringarray);
             {
                 resultstring = stringarray[1].Length;
-                if (max<resultstring)
-                {
-                    max = resultstring;
-                }
+                _ = (max > resultstring) ? max = max : max = resultstring;
             }
             /*for (int i=0,stringarray[].Length)
             {
